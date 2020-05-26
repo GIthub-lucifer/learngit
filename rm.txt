@@ -1,5 +1,6 @@
 First try in 717 comp.
 1st test for dev push.
 test for 2nd push.
+commit b.
 exercise for 2020-5-26.
 dev test for 2020-5-26.
