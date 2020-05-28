@@ -1,0 +1,77 @@
+ctrl insert  //copy
+shift insert //paste
+
+git config --global user.name "name"
+git config --global user.email "email"
+
+mkdir  //默认当前目录
+cd
+pwd
+
+git init
+
+git add
+git commit(co) -m "message"
+
+git rm <filename>
+git commit(co) -m "message"
+
+git log 
+git reflog
+git status
+git reset --hard HEAD^^(HEAD~100)/operationcode
+git log --pretty=oneline
+
+git push origin master
+
+git branch
+git branch -a
+git branch -r
+git branch -c <>
+git branch -d <>
+git switch(sw) <>
+git branch -D <> 用于删除未合并的分支
+git remote -v
+
+git switch(sw) -c dev
+git add <filename>
+git commit(co) -m "message"
+git push origin dev
+
+git merge <branch name>
+fast-forward
+
+git log --graph --pretty=oneline --abbrev-commit
+
+git stash
+git stash list
+git stash apply stash@{} //默认为0
+git stash drop stash@{} //默认为0
+
+git pull
+
+git sw master
+git add <filename>
+git commit(co) -m "message"
+git merge dev(conflict)
+modify the file
+git add
+git co
+
+git push origin :dev
+git push origin -d dev
+
+git cherry-pick operationcode
+
+git tag v1.0 //默认HEAD
+git tag
+git tag v0.9 <operationcode>
+git tag -a v0.1 -m "message" <operationcode>
+git push origin tags //同时推送所有标签
+git tag -d <tagname>
+git push origin :refs/tags/<tagname> //删除远程标签
+git push origin --delete)(-d) <tagname>
+
+git config --global alias.st status
+
+
