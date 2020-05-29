@@ -1,0 +1,43 @@
+git config --global user.name:"name";
+git config --global user.email:"@";
+
+mkdir
+cd
+pwd
+
+ctrl/shift insert
+
+git init
+
+git add
+git comiit -m "message"
+git tag <tagname> (opecode(HEAD))
+git tag -a v0.1 -m "message" <opecode>
+git push origin tags //同时推送所有标签
+git tag -d <tagname>
+git push origin :refs/tags/<tagname> //删除远程标签
+git push origin --delete)(-d) <tagname>
+
+git status
+git log
+git reflog
+git log --pretty=oneline
+git log --graph --pretty=oneline --abbrev-commit
+git reset --hard HEAD^(~<num>)/opecode
+
+git config --alias.st status
+git branch (-a/-r)
+git branch -c/-d/-D <brname> //-D用于删除未合并的分支
+git switch <brname>
+git merge dev
+
+git remote -v
+git push
+git push origin master/dev
+git push origin :dev
+
+git cherry-pick <opecode>
+
+git stash
+git stash apply stash@{0}
+git stash drop stash@{0}
