@@ -1,0 +1,52 @@
+git config --global user.name:"name";
+git config --global user.email:"email"
+
+ctrl/shift insert
+mkdir
+cd
+pwd
+
+echo //向文件中写入，需要学习完善
+
+git init
+git log --pretty=oneline
+git reflog
+
+git status
+git reset --hard HEAD/<opercode>
+
+git add
+git commit -m "message"
+
+git restore (--staged) <filename>
+
+git push
+git push origin master
+
+git switch -c dev
+git switch master
+git push origin dev
+git push origin :dev
+
+git branch
+git branch -c/-d/-D dev //-D是为了删除未合并的分支
+git branch -a/-r
+
+git merge dev
+
+git cherry-pick <opercode>
+
+git tag v0.1 (opecode)
+git tag -a name -m "message" opercode
+git tags
+git push origin tags //同时推送所有标签
+
+git tag -d <tagname>
+git push origin :refs/tags/<tagname> //删除远程标签
+git push origin --delete)(-d) <tagname>
+
+git global --config alias.st "code"
+
+git stash
+git stash apply (stash@{0})
+git stash drop stash@{0}
